@@ -1,0 +1,58 @@
+{
+    "name": "pitv",
+    "version": "0.0.1",
+    "description": "Pi IP-TV",
+    "main": "index.js",
+    "scripts": {},
+    "author": "cyan00@gmail.com",
+    "license": "ISC",
+    "eslintIgnore": [
+        "/scripts/",
+        "/node_modules/"
+    ],
+    "eslintConfig": {
+        "env": {
+            "browser": true,
+            "commonjs": true,
+            "es6": true,
+            "node": true,
+            "es2020": true
+        },
+        "plugins": [
+            "html"
+        ],
+        "extends": [
+            "airbnb-base",
+            "plugin:json/recommended"
+        ],
+        "parserOptions": {
+            "ecmaVersion": 2020
+        },
+        "rules": {
+            "no-restricted-globals": 0,
+            "import/extensions": 0,
+            "no-await-in-loop": 0,
+            "no-restricted-syntax": "off",
+            "object-curly-newline": "off",
+            "camelcase": "off",
+            "no-loop-func": "off",
+            "no-mixed-operators": "off",
+            "prefer-destructuring": "off",
+            "max-len": [
+                1,
+                225
+            ]
+        }
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "m3u8-file-parser": "^0.2.3"
+    },
+    "devDependencies": {
+        "eslint": "^7.0.0-alpha.1",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-html": "^6.0.0",
+        "eslint-plugin-import": "^2.20.1",
+        "eslint-plugin-json": "^2.1.0"
+    }
+}
